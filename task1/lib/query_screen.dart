@@ -54,7 +54,7 @@ class TransactionReportScreen extends StatelessWidget {
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 5),
             TextField(
               decoration: const InputDecoration(
                 hintText: 'Ex : 20:59:59',
@@ -74,7 +74,7 @@ class TransactionReportScreen extends StatelessWidget {
               ),
               controller: startTimeController,
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 40),
             const Text(
               'End Time (Format: hh:mm:ss)',
               style: TextStyle(
@@ -82,7 +82,7 @@ class TransactionReportScreen extends StatelessWidget {
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 5),
             TextField(
               controller: endTimeController,
               decoration: const InputDecoration(
