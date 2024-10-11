@@ -76,7 +76,7 @@ class _TransactionEntryPageState extends State<TransactionEntryPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Nhập giao dịch',
                     style: TextStyle(
                         fontSize: 30,
