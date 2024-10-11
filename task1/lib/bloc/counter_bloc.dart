@@ -49,7 +49,7 @@ class ReportBloc extends Bloc<ReportEvent, ReportState> {
         // Bỏ qua tiêu đề
         var transactionTimeCell = row[2]; // Cột Giờ là cột thứ 3 (index 2)
         var totalAmountCell =
-            row[8]; // Cột Thành tiền (VNĐ) là cột thứ 8 (index 7)
+            row[8]; // Cột Thành tiền (VNĐ) là cột thứ 9 (index 8)
 
         // Kiểm tra nếu cột Giờ hoặc Thành tiền bị null
         if (transactionTimeCell == null || totalAmountCell == null) {

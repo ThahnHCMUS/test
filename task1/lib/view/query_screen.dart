@@ -86,7 +86,7 @@ class TransactionReportScreen extends StatelessWidget {
             TextField(
               controller: endTimeController,
               decoration: const InputDecoration(
-                hintText: 'Ex : 20:59:59',
+                hintText: 'Ex : 21:59:59',
                 filled: true,
                 fillColor: Colors.white,
                 border: OutlineInputBorder(
@@ -126,7 +126,7 @@ class TransactionReportScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             BlocBuilder<ReportBloc, ReportState>(
@@ -135,7 +135,7 @@ class TransactionReportScreen extends StatelessWidget {
                   String formattedTotal =
                       NumberFormat('#,###').format(state.total);
                   return Text('Tổng tiền: $formattedTotal VND',
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.black,
                           fontSize: 20,
                           fontWeight: FontWeight.bold));
@@ -143,16 +143,16 @@ class TransactionReportScreen extends StatelessWidget {
                 if (state is ReportErrorState) {
                   return Column(
                     children: [
-                      Text('Vui lòng nhập đúng định dạng ',
+                      const Text('Vui lòng kiểm tra lại',
                           style: TextStyle(
                               color: Colors.red,
                               fontSize: 18,
                               fontWeight: FontWeight.bold)),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Text('Error: ${state.message}',
-                          style: TextStyle(
+                          style: const TextStyle(
                               color: Colors.red,
                               fontSize: 18,
                               fontWeight: FontWeight.bold)),
