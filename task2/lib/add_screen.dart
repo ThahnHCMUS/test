@@ -90,6 +90,7 @@ class _TransactionEntryPageState extends State<TransactionEntryPage> {
                     name: 'transaction_time',
                     inputType: InputType.both,
                     decoration: const InputDecoration(
+                      suffixIcon: Icon(Icons.calendar_month),
                       labelText: 'Thời gian',
                       filled: true,
                       fillColor: Colors.white,
