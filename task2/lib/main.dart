@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task2/add_screen.dart';
+import 'package:task2/view/add_screen.dart';
 import 'package:task2/bloc/add_bloc.dart';
 
 void main() {
